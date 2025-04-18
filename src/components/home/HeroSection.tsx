@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import Button from '../ui/Button';
 import gsap from 'gsap';
@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
               animate={controls}
               transition={{ 
                 duration: 0.8,
-                ease: [0.6, 0.05, -0.01, 0.9]
+                ease: "easeOut"
               }}
               className="text-white"
             >

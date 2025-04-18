@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Header: React.FC = () => {
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       transition: {
         delay: i * 0.1,
         duration: 0.6,
-        ease: [0.6, 0.05, -0.01, 0.9],
+        ease: "easeOut",
       },
     }),
   };
